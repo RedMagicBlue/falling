@@ -145,7 +145,7 @@ body {
 
 <body bg-color="black">
 
-<a-scene physics="debug: false;" particle-system="preset: snow; particleCount: 15000; accelerationValue: 0 100 0; color:green, lime; rotationAxis:y; positionSpread:0 1000 0;" loading-screen="dotsColor: #fffff; backgroundColor: black" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true" antialias="true" cursor="rayOrigin: mouse">
+<a-scene physics="debug: false;" particle-system="preset: snow; particleCount: 15000; accelerationValue: 100 100 100; color:green, lime; rotationAxis:y; positionSpread:0 1000 0;" loading-screen="dotsColor: #fffff; backgroundColor: black" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true" antialias="true" cursor="rayOrigin: mouse">
 
 
 <!-- Camera -->
@@ -177,12 +177,12 @@ body {
 <a-box material="opacity: 0.0;  transparent: true;" scale="200 200 200" position="0 399 0" audio="src: #music;"></a-box>	
 
 <a-sphere scale="5 5 5" static-body shader-frog="name:Cosmic_Shader" id="yinyang1" rotation="0 0 0" gui-interactable position="30 -100 0" sound="src: #sound; on: click;"
-	  animation="property: position; to: 30 0 600; loop: true; easing: linear; dur: 10000"
+	  animation="property: position; to: 30 600 0; loop: true; easing: linear; dur: 10000"
 	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #exit1; position:-30 -400 0; visible: true;"> 
 </a-sphere>
 	
 <a-sphere scale="10 10 10" static-body shader-frog="name:Cosmic_Shader" id="exit1" visible="false" rotation="0 0 0" gui-interactable onclick="location.href='level2.html'" position="0 1000 0" sound="src: #sound; on: click;"
-	  animation="property: rotation; to:  600 0; loop: true; easing: linear; dur: 10000"> 
+	  animation="property: position; to: 0 600 0; loop: true; easing: linear; dur: 10000"> 
 </a-sphere>
 
 </a-scene>
