@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="author" content="RedMagicBlue">
     <meta property="og:image" content="./images/icon.png" />
-    <meta http-equiv="refresh" content="120; URL='gameover.html'" />
+    <meta http-equiv="refresh" content="160; URL='gameover.html'" />
     <link rel="icon" type="image/png" href="./images/logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	  
     <script src="assets/engine.js"></script>
@@ -145,12 +145,12 @@ body {
 
 <body bg-color="black">
 
-<a-scene physics="debug: false; gravity:-100; restitution: 5" particle-system="preset: snow; particleCount: 15000; color:green, lime; rotationAxis:y; positionSpread:0 1000 0;" loading-screen="dotsColor: #fffff; backgroundColor: black" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true" antialias="true" cursor="rayOrigin: mouse">
+<a-scene physics="debug: false;" particle-system="preset: snow; particleCount: 15000; color:green, lime; rotationAxis:y; positionSpread:0 1000 0;" loading-screen="dotsColor: #fffff; backgroundColor: black" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: true" antialias="true" cursor="rayOrigin: mouse">
 
 
 <!-- Camera -->
 
-<a-entity id="rig" position="0 400 0" kinematic-body look-controls="pointerLockEnabled:true;">
+<a-entity id="rig" position="0 400 0" look-controls="pointerLockEnabled:true;">
 	<a-entity id="camera" camera position="0 1.6 0" cursor-visible="true">
 
 				<a-gui-cursor id="cursor"
@@ -177,7 +177,7 @@ body {
 <a-box material="opacity: 0.0;  transparent: true;" scale="200 200 200" position="0 399 0" audio="src: #music;"></a-box>	
 
 <a-sphere scale="5 5 5" shader-frog="name:Cosmic_Shader" id="yinyang1" rotation="0 0 0" gui-interactable position="30 -100 0" sound="src: #sound; on: click;"
-	  animation="property: rotation; to: 360 0 360; loop: true; easing: linear; dur: 10000"
+	  animation="property: position; to: 30 600 0; loop: true; easing: linear; dur: 70000"
 	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #exit1; position:-30 -400 0; visible: true;"> 
 </a-sphere>
 	
