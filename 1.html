@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="author" content="RedMagicBlue">
     <meta property="og:image" content="./images/icon.png" />
-    <meta http-equiv="refresh" content="160; URL='gameover.html'" />
+    <meta http-equiv="refresh" content="180; URL='gameover.html'" />
     <link rel="icon" type="image/png" href="./images/logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	  
     <script src="assets/engine.js"></script>
@@ -181,8 +181,8 @@ body {
 	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #exit1; position:-30 -400 0; visible: true;"> 
 </a-sphere>
 	
-<a-sphere scale="10 10 10" shader-frog="name:Cosmic_Shader" id="exit1" visible="false" rotation="0 0 0" gui-interactable onclick="location.href='level2.html'" position="0 1000 0" sound="src: #sound; on: click;"
-	  animation="property: rotation; to: 360 0 360; loop: true; easing: linear; dur: 10000"> 
+<a-sphere scale="10 10 10" shader-frog="name:Cosmic_Shader" id="exit1" visible="false" rotation="0 0 0" gui-interactable onclick="location.href='level2.html'" position="0 -800 0" sound="src: #sound; on: click;"
+	  animation="property: position; to: 0 600 0; loop: true; easing: linear; dur: 100000"> 
 </a-sphere>
 
 </a-scene>
