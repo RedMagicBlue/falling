@@ -178,21 +178,21 @@ body {
 	
 <a-sphere scale="3 3 3" shader-frog="name:Cosmic_Shader" id="yinyang1" rotation="0 0 0" gui-interactable position="40 50 0" sound="src: #sound; on: click;"
 	  animation="property: position; to: 40 600 0; loop: true; easing: linear; dur: 10000"
-	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #yinyang2; position:-50 -100 0; visible: true;"> 
+	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #yinyang2; visible: true;"> 
 </a-sphere>
 
-<a-sphere scale="3 3 3" shader-frog="name:Cosmic_Shader" id="yinyang2" visible="false" rotation="0 0 0" gui-interactable position="0 1000 0" sound="src: #sound; on: click;"
-	  animation="property: rotation; to: 360 0 360; loop: true; easing: linear; dur: 10000"
-	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #yinyang3; position:80 -250 0; visible: true;"> 
+<a-sphere scale="3 3 3" shader-frog="name:Cosmic_Shader" id="yinyang2" visible="false" rotation="0 0 0" gui-interactable position="-50 -100 0" sound="src: #sound; on: click;"
+	  animation="property: position; to: -50 600 0; loop: true; easing: linear; dur: 10000"
+	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #yinyang3; visible: true;"> 
 </a-sphere>
 
-<a-sphere scale="3 3 3" shader-frog="name:Cosmic_Shader" id="yinyang3" visible="false" rotation="0 0 0" gui-interactable position="0 1000 0" sound="src: #sound; on: click;"
-	  animation="property: rotation; to: 360 0 360; loop: true; easing: linear; dur: 10000"
-	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #exit1; position:0 -450 0; visible: true;"> 
+<a-sphere scale="3 3 3" shader-frog="name:Cosmic_Shader" id="yinyang3" visible="false" rotation="0 0 0" gui-interactable position="80 -250 0" sound="src: #sound; on: click;"
+	  animation="property: position; to: -80 600 0; loop: true; easing: linear; dur: 10000"
+	  animation__mouseenter="property: scale; to: 0 0 0; startEvents: click; dur: 500"; event-set__click="_target: #exit1; visible: true;"> 
 </a-sphere>
 	
-<a-sphere scale="5 5 5" shader-frog="name:Cosmic_Shader" id="exit1" visible="false" rotation="0 0 0" gui-interactable onclick="location.href='level4.html'" position="0 1000 0" sound="src: #sound; on: click;"
-	  animation="property: rotation; to: 360 0 360; loop: true; easing: linear; dur: 10000"> 
+<a-sphere scale="5 5 5" shader-frog="name:Cosmic_Shader" id="exit1" visible="false" rotation="0 0 0" gui-interactable onclick="location.href='level4.html'" position="0 -450 0" sound="src: #sound; on: click;"
+	  animation="property: position; to: 120 600 0; loop: true; easing: linear; dur: 10000"> 
 </a-sphere>
 
 </a-scene>
