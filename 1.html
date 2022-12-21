@@ -174,7 +174,7 @@ body {
 <audio id="music" src="assets/music.mp3" crossorigin="anonymous"></audio>
 <audio id="sound" src="assets/sound.mp3" crossorigin="anonymous"></audio>
 	
-<a-box material="opacity: 0.0;  transparent: true;" scale="200 200 200" position="0 399 0" audio="src: #music;"></a-box>	
+<a-box material="opacity: 0.0;  transparent: true;" scale="200 200 200" position="0 399 0" audio="src: #music;" animation="property: position; to: 0 410 0; loop: true; easing: linear; dur: 1000"></a-box>	
 
 <a-sphere scale="5 5 5" shader-frog="name:Cosmic_Shader" id="yinyang1" rotation="0 0 0" gui-interactable position="30 -100 0" sound="src: #sound; on: click;"
 	  animation="property: position; to: 30 600 0; loop: true; easing: linear; dur: 10000"
